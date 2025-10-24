@@ -103,14 +103,15 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 1.5rem;
-    position: fixed;  
-    top: 0;           
+    position: fixed;
+    top: 0;
     left: 0;
-    width: 100%;      
+    width: 100%;
     z-index: 1100;
     font-family: "Oleo Script", system-ui;
     margin-bottom: 5rem;
 }
+
 .header .logo {
     font-family: 'Oleo Script', cursive;
     font-size: 2.2rem;
@@ -118,11 +119,12 @@ header {
     color: var(--color-text);
     text-decoration: none;
 }
+
 .header .logo span {
-     transition: color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-.logo-img{
+.logo-img {
     display: flex;
     align-items: center;
 }
@@ -136,9 +138,11 @@ header {
 .logo-img img:hover {
     transform: scale(1.05);
 }
+
 .producto a:hover h3 {
     color: var(--color-primary-dark);
 }
+
 .producto a:hover img {
     opacity: 0.95;
     transform: scale(1.15);
@@ -147,6 +151,7 @@ header {
     -ms-transform: scale(1.15);
     -o-transform: scale(1.15);
 }
+
 .navegacion {
     display: flex;
     align-items: center;
@@ -184,7 +189,7 @@ header {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    
+
 }
 
 .menu-btn {
@@ -267,9 +272,10 @@ main {
     width: 100%;
     flex: 1;
     margin-left: 0;
-    transition: margin-left 0.3s ease;
+    transition: padding-left 0.3s ease;
     padding: 20px;
     padding-top: 110px;
+    padding-left: 20px;
     -webkit-transition: margin-left 0.3s ease;
     -moz-transition: margin-left 0.3s ease;
     -ms-transition: margin-left 0.3s ease;
@@ -279,9 +285,9 @@ main {
 
 
 .main.shifted {
-    
-    margin-left: 250px;
-    
+
+    padding-left: 270px;
+
 }
 
 /* Hero Section */
@@ -297,23 +303,25 @@ main {
 .hero-section .titulo h2 {
     font-family: 'Oleo Script', cursive;
     font-size: 1.8rem;
-    
+
     color: var(--color-primary-dark);
     text-align: center;
     margin-bottom: 2rem;
 }
-.titulo h2{
+
+.titulo h2 {
     font-family: 'Oleo Script', cursive;
     font-size: 2rem;
-    
+
     color: var(--color-primary-dark);
     text-align: center;
     margin-bottom: 2rem;
 }
-.titulo p{
+
+.titulo p {
     font-family: 'Oleo Script', cursive;
     font-size: 1.25rem;
-    
+
     color: var(--color-text);
     text-align: center;
     margin-bottom: 2rem;
@@ -350,8 +358,8 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2rem;
-    margin-right: 4rem;
-    padding: 1rem 0;
+    padding-right: 4rem;
+
 }
 
 .producto {
@@ -371,14 +379,14 @@ main {
 }
 
 .producto {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
 }
 
 .producto.animate {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .producto img {
@@ -417,17 +425,106 @@ main {
     align-items: center;
     gap: 8px;
 }
-section{
+
+.producto-detalle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    background-color: var(--color-white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 3rem;
+}
+
+.producto-detalle img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.producto-info h1 {
+    font-family: 'Oleo Script', cursive;
+    font-size: 2.8rem;
+    color: var(--color-text);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.producto-info .precio {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: 1.5rem;
+}
+
+.producto-info .descripcion {
+    font-size: 1rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.producto-info h3 {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary-dark);
+    border-bottom: 2px solid var(--color-primary-light);
+    padding-bottom: 8px;
+    font-family: 'Oleo Script', cursive;
+}
+
+.producto-info ul {
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-text-light);
+}
+
+.producto-info ul li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.producto-info ul li i {
+    color: var(--color-primary-dark);
+}
+
+/* Estilo para el título de "Relacionados" */
+.titulo-relacionados {
+    font-family: 'Oleo Script', cursive;
+    font-size: 2rem;
+    color: var(--color-primary-dark);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Botón de comprar en esta página */
+.producto-info .btn-comprar {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    justify-content: center;
+}
+
+
+section {
     margin-top: 5rem;
 }
+
 .btn-comprar:hover {
     background-color: var(--color-primary-dark);
     color: var(--color-white);
     transform: scale(1.05);
 }
+
 .sobre-nosotros-section {
     padding: 4rem 1.5rem;
-    background-color: var(--color-card-bg); /* Fondo blanco */
+    background-color: var(--color-card-bg);
+    /* Fondo blanco */
     margin: 3rem 0;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -445,8 +542,9 @@ section{
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 50%; /* Foto redonda */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border-radius: 50%;
+    /* Foto redonda */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     border: 6px solid var(--color-primary-light);
 }
 
@@ -463,9 +561,11 @@ section{
     line-height: 1.7;
     margin-bottom: 1rem;
 }
+
 .contacto-section {
     padding: 3rem 1.5rem;
-    background-color: var(--color-bg-dark); /* Fondo suave */
+    background-color: var(--color-bg-dark);
+    /* Fondo suave */
 }
 
 .contacto-section .titulo p {
@@ -481,7 +581,7 @@ section{
     background-color: var(--color-white);
     padding: 2.5rem;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -523,14 +623,16 @@ section{
     width: 100%;
     font-size: 1.1rem;
     padding: 1rem;
-    justify-content: center; /* Centra el ícono y texto */
+    justify-content: center;
+    /* Centra el ícono y texto */
 }
 
 
 /* 7. SECCIÓN TESTIMONIOS */
 .testimonios-section {
     padding: 3rem 1.5rem;
-    background-color: var(--color-bg); /* Un fondo ligeramente diferente */
+    background-color: var(--color-bg);
+    /* Un fondo ligeramente diferente */
 }
 
 .testimonios-grid {
@@ -546,7 +648,8 @@ section{
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    border-top: 5px solid var(--color-accent); /* Detalle de acento */
+    border-top: 5px solid var(--color-accent);
+    /* Detalle de acento */
 }
 
 .testimonio p {
@@ -561,7 +664,8 @@ section{
 
 /* Comillas decorativas (requiere Font Awesome) */
 .testimonio p::before {
-    content: '\f10d'; /* Icono de comillas de FontAwesome */
+    content: '\f10d';
+    /* Icono de comillas de FontAwesome */
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     position: absolute;
@@ -576,6 +680,7 @@ section{
     font-size: 1rem;
     color: var(--color-text);
 }
+
 /* Footer */
 footer {
     grid-area: footer;
@@ -628,5 +733,3 @@ footer {
     color: var(--color-white);
     transform: translateY(-5px);
 }
-
-

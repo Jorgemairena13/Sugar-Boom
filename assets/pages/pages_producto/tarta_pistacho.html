@@ -11,101 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <style>
-        .producto-detalle {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2.5rem;
-            background-color: var(--color-white);
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            margin-bottom: 3rem;
-        }
-
-        .producto-detalle img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            object-fit: cover;
-        }
-
-        .producto-info h1 {
-            font-family: 'Oleo Script', cursive;
-            font-size: 2.8rem;
-            color: var(--color-text);
-            margin-top: 0;
-            margin-bottom: 1rem;
-        }
-
-        .producto-info .precio {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--color-primary-dark);
-            margin-bottom: 1.5rem;
-        }
-
-        .producto-info .descripcion {
-            font-size: 1rem;
-            color: var(--color-text-light);
-            line-height: 1.6;
-            margin-bottom: 2rem;
-        }
-        
-        .producto-info h3 {
-            font-size: 1.3rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: var(--color-primary-dark);
-            border-bottom: 2px solid var(--color-primary-light);
-            padding-bottom: 8px;
-            font-family: 'Oleo Script', cursive;
-        }
-
-        .producto-info ul {
-            list-style: none;
-            padding-left: 0;
-            color: var(--color-text-light);
-        }
-
-        .producto-info ul li {
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .producto-info ul li i {
-            color: var(--color-primary-dark);
-        }
-
-        /* Estilo para el título de "Relacionados" */
-        .titulo-relacionados {
-            font-family: 'Oleo Script', cursive;
-            font-size: 2rem;
-            color: var(--color-primary-dark);
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        /* Botón de comprar en esta página */
-        .producto-info .btn-comprar {
-            width: 100%;
-            padding: 1rem;
-            font-size: 1.1rem;
-            justify-content: center;
-        }
-
-        /* Responsive para la vista de producto */
-        @media (max-width: 800px) {
-            .producto-detalle {
-                grid-template-columns: 1fr; /* Coloca la imagen encima del texto */
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -113,11 +21,11 @@
         <header class="header">
             <nav class="navegacion" aria-label="Navegación principal">
                 <ul class="menu">
-                    <li><a href="../../index.html"><i class="fas fa-home"></i> Inicio</a></li>
-                    <li><a href="../../index.html#productos"><i class="fas fa-cookie"></i> Productos</a></li>
-                    <li><a href="../../index.html#ofertas"><i class="fas fa-tags"></i> Ofertas</a></li>
-                    <li><a href="../../index.html#sobre-nosotros"><i class="fas fa-store"></i> Sobre Nosotros</a></li>
-                    <li><a href="../../index.html#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li><a href="../../../index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="../productos.html"><i class="fas fa-cookie"></i> Productos</a></li>
+                    <li><a href="../../../index.html#ofertas"><i class="fas fa-tags"></i> Ofertas</a></li>
+                    <li><a href="../../../index.html#sobre-nosotros"><i class="fas fa-store"></i> Sobre Nosotros</a></li>
+                    <li><a href="../../../index.html#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -144,7 +52,7 @@
             <div class="producto-detalle">
                 
                 <div class="producto-imagen">
-                    <img src="../img/tarta_pistacho.webp" alt="Tarta de queso y pistacho">
+                    <img src="../../img/tarta_pistacho.webp" alt="Tarta de queso y pistacho">
                 </div>
 
                 <div class="producto-info">
@@ -172,21 +80,21 @@
             <div class="productos">
 
                 <article class="producto">
-                    <img src="../img/tarta_happy.webp" alt="Tarta Happy Hippo">
+                    <img src="../../img/tarta_happy.webp" alt="Tarta Happy Hippo">
                     <h3>Tarta Happy Hippo</h3>
                     <p>Tarta inspirada en Happy Hippo, con relleno cremoso, chocolate y galleta crujiente.</p>
                     <button class="btn-comprar"><i class="fas fa-shopping-cart"></i> Comprar</button>
                 </article>
 
                 <article class="producto">
-                    <img src="../img/tarta_filipinos.webp" alt="Tarta Filipinos">
+                    <img src="../../img/tarta_filipinos.webp" alt="Tarta Filipinos">
                     <h3>Tarta Filipinos</h3>
                     <p>Tarta de chocolate con cobertura crujiente de Filipinos y relleno cremoso.</p>
                     <button class="btn-comprar"><i class="fas fa-shopping-cart"></i> Comprar</button>
                 </article>
 
                 <article class="producto">
-                    <img src="../img/surtido_galletas.webp" alt="Surtido de galletas">
+                    <img src="../../img/surtido_galletas.webp" alt="Surtido de galletas">
                     <h3>Surtido de Galletas</h3>
                     <p>Variedad de galletas artesanales: chocolate, avena y mantequilla.</p>
                     <button class="btn-comprar"><i class="fas fa-shopping-cart"></i> Comprar</button>
