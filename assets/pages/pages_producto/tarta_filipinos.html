@@ -19,10 +19,13 @@
 <body>
     <div class="container">
         <header class="header">
+            <a href="../../../index.html" class="logo">
+                <span>Sugar Bloom</span>
+            </a>
             <nav class="navegacion" aria-label="Navegación principal">
                 <ul class="menu">
                     <li><a href="../../../index.html"><i class="fas fa-home"></i> Inicio</a></li>
-                    <li><a href="../../../index.html#productos"><i class="fas fa-cookie"></i> Productos</a></li>
+                    <li><a href="../productos.html"><i class="fas fa-cookie"></i> Productos</a></li>
                     <li><a href="../../../index.html#ofertas"><i class="fas fa-tags"></i> Ofertas</a></li>
                     <li><a href="../../../index.html#sobre-nosotros"><i class="fas fa-store"></i> Sobre Nosotros</a></li>
                     <li><a href="../../../index.html#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
@@ -30,22 +33,38 @@
             </nav>
         </header>
 
+            <aside class="aside" id="aside" aria-label="Categorías y filtros">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="../panes.html"><i class="fas fa-bread-slice"></i> Panes</a></li>
+                <li><a href="../pasteles.html"><i class="fas fa-birthday-cake"></i> Pasteles</a></li>
+                <li><a href="../galletas.html"><i class="fas fa-cookie"></i> Galletas</a></li>
+                <li><a href="../bebidas.html"><i class="fas fa-coffee"></i> Bebidas</a></li>
+            </ul>
+
+            <h3>Filtros</h3>
+            <ul>
+                <li><a href="#chocolate"><i class="fas fa-bolt"></i> Chocolate</a></li>
+                <li><a href="#frutas"><i class="fas fa-apple-alt"></i> Frutas</a></li>
+                <li><a href="#crema"><i class="fas fa-cake-slice"></i> Cremas</a></li>
+            </ul>
+        </aside>
 
         <main class="main" id="producto-detalle">
 
             <div class="producto-detalle">
                 
                 <div class="producto-imagen">
-                    <img src="../../img/tarta_filipinos.webp" alt="Tarta de queso y pistacho">
+                    <img src="../../img/tarta_filipinos.webp" alt="Tarta Filipinos">
                 </div>
 
                 <div class="producto-info">
-                    <h1>Tarta de Queso y Pistacho</h1>
-                    <p class="precio">$28.50</p>
+                    <h1>Tarta Filipinos</h1>
+                    <p class="precio">$27.99</p>
                     <p class="descripcion">
-                        Tarta de queso cremosa con base de galleta crujiente y cobertura de pistacho natural.
-                        Una opción elegante y deliciosa para sorprender a tus invitados.
-                        Elaborada con queso crema de alta calidad y pistachos seleccionados.
+                        Crujiente base de galleta con una suave y deliciosa crema de chocolate.
+                        Cubierta con una generosa capa de Filipinos de chocolate blanco y chocolate con leche.
+                        Una tarta espectacular que combina texturas cremosas y crujientes.
                     </p>
                     
                     <button class="btn-comprar"><i class="fas fa-shopping-cart"></i> Añadir al Carrito</button>
@@ -53,8 +72,8 @@
                     <h3>Detalles</h3>
                     <ul>
                         <li><i class="fas fa-users"></i> <strong>Porciones:</strong> 6-8 personas</li>
-                        <li><i class="fas fa-check"></i> <strong>Ingredientes:</strong> Queso crema, pistachos, galleta, mantequilla, azúcar.</li>
-                        <li><i class="fas fa-exclamation-triangle"></i> <strong>Alérgenos:</strong> Contiene lácteos, gluten y frutos secos (pistacho).</li>
+                        <li><i class="fas fa-check"></i> <strong>Ingredientes:</strong> Galleta, mantequilla, crema de chocolate, Filipinos (chocolate blanco y con leche), azúcar.</li>
+                        <li><i class="fas fa-exclamation-triangle"></i> <strong>Alérgenos:</strong> Contiene lácteos y gluten. Puede contener trazas de frutos secos.</li>
                     </ul>
                 </div>
             </div>
@@ -71,9 +90,9 @@
                 </article>
 
                 <article class="producto">
-                    <img src="../../img/tarta_filipinos.webp" alt="Tarta Filipinos">
-                    <h3>Tarta Filipinos</h3>
-                    <p>Tarta de chocolate con cobertura crujiente de Filipinos y relleno cremoso.</p>
+                    <img src="../../img/tarta_pistacho.webp" alt="Tarta de queso y pistacho">
+                    <h3>Tarta de Pistacho</h3>
+                    <p>Tarta de queso cremosa con base de galleta crujiente y cobertura de pistacho natural.</p>
                     <button class="btn-comprar"><i class="fas fa-shopping-cart"></i> Comprar</button>
                 </article>
 
@@ -104,7 +123,7 @@
         </footer>
     </div>
 
-    <script src="../js/funciones.js"></script>
+    <script src="../../js/funciones.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sugar Bloom - Galletas Artesanales</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="../../../index.html" class="logo">
+                <span>Sugar Bloom</span>
+            </a>
+            <nav class="navegacion" aria-label="Navegación principal">
+                <ul class="menu">
+                    <li><a href="../../../index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="../productos.html"><i class="fas fa-cookie"></i> Productos</a></li>
+                    <li><a href="../../../index.html#ofertas"><i class="fas fa-tags"></i> Ofertas</a></li>
+                    <li><a href="../../../index.html#sobre-nosotros"><i class="fas fa-store"></i> Sobre Nosotros</a></li>
+                    <li><a href="../../../index.html#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside class="aside" id="aside" aria-label="Categorías y filtros">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="../panes.html"><i class="fas fa-bread-slice"></i> Panes</a></li>
+                <li><a href="../pasteles.html"><i class="fas fa-birthday-cake"></i> Pasteles</a></li>
+                <li><a href="../galletas.html"><i class="fas fa-cookie"></i> Galletas</a></li>
+                <li><a href="../bebidas.html"><i class="fas fa-coffee"></i> Bebidas</a></li>
+            </ul>
+
+            <h3>Filtros</h3>
+            <ul>
+                <li><a href="#chocolate"><i class="fas fa-bolt"></i> Chocolate</a></li>
+                <li><a href="#frutas"><i class="fas fa-apple-alt"></i> Frutas</a></li>
+                <li><a href="#crema"><i class="fas fa-cake-slice"></i> Cremas</a></li>
+            </ul>
+        </aside>
+
+        <main class="main" id="producto-detalle">
+
+            <div class="producto-detalle">
+                
+                <div class="producto-imagen">
+                    <img src="../../img/surtido_galletas.webp" alt="Galletas Artesanales">
+                </div>
+
+                <div class="producto-info">
+                    <h1>Galletas Artesanales</h1>
+                    <p class="precio">$12.99</p>
+                    <p class="descripcion">
+                        Nuestras galletas artesanales están elaboradas con ingredientes de primera calidad y horneadas diariamente.
+                        Perfectas para acompañar el café o té, o simplemente para disfrutar en cualquier momento del día.
+                        Cada galleta es única y hecha con amor por nuestros maestros pasteleros.
+                    </p>
+                    
+                    <button class="btn-comprar"><i class="fas fa-shopping-cart"></i> Añadir al Carrito</button>
+
+                    <h3>Detalles</h3>
+                    <ul>
+                        <li><i class="fas fa-box"></i> <strong>Contenido:</strong> 8 galletas</li>
+                        <li><i class="fas fa-check"></i> <strong>Ingredientes:</strong> Harina, mantequilla, azúcar, huevos, esencias naturales.</li>
+                        <li><i class="fas fa-exclamation-triangle"></i> <strong>Alérgenos:</strong> Contiene gluten, lácteos y huevo.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="titulo-relacionados">También te podría gustar</h2>
+            
+            <div class="productos">
+
+                <article class="producto">
+                    <img src="../../img/galleta_sabores.webp" alt="Galletas de Sabores">
+                    <h3>Galletas de Sabores</h3>
+                    <p>Deliciosa colección de galletas artesanales con diferentes sabores y decoraciones.</p>
+                    <button class="btn-comprar"><i class="fas fa-shopping-cart"></i> Comprar</button>
+                </article>
+
+                <article class="producto">
+                    <img src="../../img/san_valentin.webp" alt="Galletas San Valentín">
+                    <h3>Galletas San Valentín</h3>
+                    <p>Galletas decoradas especiales para celebrar el día del amor.</p>
+                    <button class="btn-comprar"><i class="fas fa-shopping-cart"></i> Comprar</button>
+                </article>
+
+                <article class="producto">
+                    <img src="../../img/tarta_filipinos.webp" alt="Tarta Filipinos">
+                    <h3>Tarta Filipinos</h3>
+                    <p>Tarta de chocolate con cobertura crujiente de Filipinos y relleno cremoso.</p>
+                    <button class="btn-comprar"><i class="fas fa-shopping-cart"></i> Comprar</button>
+                </article>
+
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; 2025 <strong>Sugar Bloom</strong> - Jorge Enrique Fernández</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle Pastel 123, Ciudad Dulce</p>
+                    <p><i class="fas fa-phone"></i> +34 123 456 789</p>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../../js/funciones.js"></script>
+</body>
+
+</html>

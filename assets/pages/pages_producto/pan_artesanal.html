@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sugar Bloom - Pan Artesanal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="../../../index.html" class="logo">
+                <span>Sugar Bloom</span>
+            </a>
+            <nav class="navegacion" aria-label="Navegación principal">
+                <ul class="menu">
+                    <li><a href="../../../index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="../productos.html"><i class="fas fa-cookie"></i> Productos</a></li>
+                    <li><a href="../../../index.html#ofertas"><i class="fas fa-tags"></i> Ofertas</a></li>
+                    <li><a href="../../../index.html#sobre-nosotros"><i class="fas fa-store"></i> Sobre Nosotros</a></li>
+                    <li><a href="../../../index.html#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+            <aside class="aside" id="aside" aria-label="Categorías y filtros">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="../panes.html"><i class="fas fa-bread-slice"></i> Panes</a></li>
+                <li><a href="../pasteles.html"><i class="fas fa-birthday-cake"></i> Pasteles</a></li>
+                <li><a href="../galletas.html"><i class="fas fa-cookie"></i> Galletas</a></li>
+                <li><a href="../bebidas.html"><i class="fas fa-coffee"></i> Bebidas</a></li>
+            </ul>
+
+            <h3>Filtros</h3>
+            <ul>
+                <li><a href="#chocolate"><i class="fas fa-bolt"></i> Chocolate</a></li>
+                <li><a href="#frutas"><i class="fas fa-apple-alt"></i> Frutas</a></li>
+                <li><a href="#crema"><i class="fas fa-cake-slice"></i> Cremas</a></li>
+            </ul>
+        </aside>
+
+        <main class="main" id="producto-detalle">
+
+            <div class="producto-detalle">
+                
+                <div class="producto-imagen">
+                    <img src="../../img/pan1.jpg" alt="Pan Artesanal">
+                </div>
+
+                <div class="producto-info">
+                    <h1>Pan Artesanal</h1>
+                    <p class="precio">$8.99</p>
+                    <p class="descripcion">
+                        Pan artesanal elaborado con masa madre y fermentación lenta de 24 horas.
+                        Horneado en horno de piedra para conseguir una corteza crujiente y una miga esponjosa.
+                        El auténtico sabor del pan tradicional hecho con ingredientes naturales.
+                    </p>
+                    
+                    <button class="btn-comprar"><i class="fas fa-shopping-cart"></i> Añadir al Carrito</button>
+
+                    <h3>Detalles</h3>
+                    <ul>
+                        <li><i class="fas fa-weight"></i> <strong>Peso:</strong> 500g</li>
+                        <li><i class="fas fa-check"></i> <strong>Ingredientes:</strong> Harina de trigo, agua, masa madre, sal marina.</li>
+                        <li><i class="fas fa-exclamation-triangle"></i> <strong>Alérgenos:</strong> Contiene gluten.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="titulo-relacionados">También te podría gustar</h2>
+            
+            <div class="productos">
+
+                <article class="producto">
+                    <img src="../../img/pastel1.jpg" alt="Pastel de Chocolate">
+                    <h3>Pastel de Chocolate</h3>
+                    <p>Exquisito pastel de chocolate con tres capas de bizcocho y ganache.</p>
+                    <button class="btn-comprar"><i class="fas fa-shopping-cart"></i> Comprar</button>
+                </article>
+
+                <article class="producto">
+                    <img src="../../img/gofre_pistacho.webp" alt="Gofre de Pistacho">
+                    <h3>Gofre de Pistacho</h3>
+                    <p>Gofre artesanal con crema de pistacho y trozos de pistacho caramelizado.</p>
+                    <button class="btn-comprar"><i class="fas fa-shopping-cart"></i> Comprar</button>
+                </article>
+
+                <article class="producto">
+                    <img src="../../img/surtido_galletas.webp" alt="Surtido de Galletas">
+                    <h3>Surtido de Galletas</h3>
+                    <p>Variedad de galletas artesanales: chocolate, avena y mantequilla.</p>
+                    <button class="btn-comprar"><i class="fas fa-shopping-cart"></i> Comprar</button>
+                </article>
+
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; 2025 <strong>Sugar Bloom</strong> - Jorge Enrique Fernández</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle Pastel 123, Ciudad Dulce</p>
+                    <p><i class="fas fa-phone"></i> +34 123 456 789</p>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../../js/funciones.js"></script>
+</body>
+
+</html>

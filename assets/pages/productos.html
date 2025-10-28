@@ -20,19 +20,43 @@
     <div class="container">
         <!-- HEADER -->
         <header class="header">
+            <a href="../../index.html" class="logo">
+                <span>Sugar Bloom</span>
+            </a>
             <nav class="navegacion" aria-label="Navegación principal">
                 <ul class="menu">
                     <li><a href="../../index.html"><i class="fas fa-home"></i> Inicio</a></li>
                     <li><a href="../../index.html#productos"><i class="fas fa-cookie"></i> Productos</a></li>
-                    <li><a href="../../index.html#ofertas"><i class="fas fa-tags"></i> Ofertas</a></li>
+                    <li><a href="ofertas.html"><i class="fas fa-tags"></i> Ofertas</a></li>
                     <li><a href="../../index.html#sobre-nosotros"><i class="fas fa-store"></i> Sobre Nosotros</a></li>
                     <li><a href="../../index.html#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
                 </ul>
             </nav>
         </header>
+        <!-- ASIDE -->
+        <aside class="aside" id="aside" aria-label="Categorías y ofertas">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="panes.html"><i class="fas fa-bread-slice"></i> Panes</a></li>
+                <li><a href="pasteles.html"><i class="fas fa-birthday-cake"></i> Pasteles</a></li>
+                <li><a href="galletas.html"><i class="fas fa-cookie"></i> Galletas</a></li>
+                <li><a href="bebidas.html"><i class="fas fa-coffee"></i> Bebidas</a></li>
+            </ul>
+
+            <h3>Ofertas</h3>
+            <ul>
+                <li><a href="#promo1"><i class="fas fa-percentage"></i> Promo del Día</a></li>
+                <li><a href="#promo2"><i class="fas fa-users"></i> Combo Familiar</a></li>
+            </ul>
+        </aside>
 
         <!-- MAIN -->
         <main class="main" id="productos">
+            <div class="button-header">
+                <button class="menu-btn" aria-label="Mostrar menú de categorías">
+                    <i class="fas fa-bars"></i> Categorías
+                </button>
+            </div>
             <div class="titulo">
                 <h2>Todos Nuestros Productos</h2>
                 <p>Explora nuestra amplia selección de productos artesanales, perfectos para cualquier ocasión.</p>
@@ -105,7 +129,7 @@
                 </a>
 
                 <!-- SURTIDO DE GALLETAS -->
-                <a href="pages_producto/surtido_galletas.html">
+                <a href="pages_producto/galletas.html">
                     <article class="producto">
                         <img src="../img/surtido_galletas.webp" alt="Surtido de galletas">
                         <h3>Surtido de Galletas</h3>
@@ -115,7 +139,7 @@
                     </article>
                 </a>
                 <!-- GALLETAS DE SABORES -->
-                <a href="pages_producto/galletas.html">
+                <a href="pages_producto/galleta_sabores.html">
                     <article class="producto">
                         <img src="../img/galleta_sabores.webp" alt="Galletas de varios sabores">
                         <h3>Galletas de Sabores</h3>
